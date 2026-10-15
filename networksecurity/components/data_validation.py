@@ -103,6 +103,6 @@ class DataValidation:
                 drift_report_file_path=self.data_validation_config.drift_report_file_path
             )
 
-            return self.data_ingestion_artifact
+            return data_validation_artifacts
         except Exception as e:
             raise NetworkSecurityException(e,sys)

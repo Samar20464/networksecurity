@@ -1,0 +1,90 @@
+Abnormal_URL:
+  drift_status: false
+  p_value: 0.9999870328305437
+DNSRecord:
+  drift_status: false
+  p_value: 0.937700636804134
+Domain_registeration_length:
+  drift_status: false
+  p_value: 0.9967592149935283
+Favicon:
+  drift_status: false
+  p_value: 0.9176444459033948
+Google_Index:
+  drift_status: false
+  p_value: 0.9999173487965959
+HTTPS_token:
+  drift_status: false
+  p_value: 0.9595899824673692
+Iframe:
+  drift_status: false
+  p_value: 1.0
+Links_in_tags:
+  drift_status: false
+  p_value: 0.998737686578748
+Links_pointing_to_page:
+  drift_status: false
+  p_value: 0.9825116735723419
+Page_Rank:
+  drift_status: false
+  p_value: 0.9999992797922443
+Prefix_Suffix:
+  drift_status: false
+  p_value: 1.0
+Redirect:
+  drift_status: false
+  p_value: 0.976524581867378
+Request_URL:
+  drift_status: false
+  p_value: 0.2643227056116778
+RightClick:
+  drift_status: false
+  p_value: 1.0
+SFH:
+  drift_status: false
+  p_value: 0.9147612405928234
+SSLfinal_State:
+  drift_status: false
+  p_value: 0.999881423225265
+Shortining_Service:
+  drift_status: false
+  p_value: 0.9630323994421978
+Statistical_report:
+  drift_status: false
+  p_value: 0.7175450892665778
+Submitting_to_email:
+  drift_status: false
+  p_value: 0.951014162211851
+URL_Length:
+  drift_status: false
+  p_value: 0.6912205387486919
+URL_of_Anchor:
+  drift_status: false
+  p_value: 0.21366472101148862
+age_of_domain:
+  drift_status: false
+  p_value: 0.9999494070489516
+double_slash_redirecting:
+  drift_status: false
+  p_value: 0.9952842208032514
+having_At_Symbol:
+  drift_status: false
+  p_value: 0.9999999892125854
+having_IP_Address:
+  drift_status: false
+  p_value: 0.9494883294637384
+having_Sub_Domain:
+  drift_status: false
+  p_value: 0.9999999999163819
+on_mouseover:
+  drift_status: false
+  p_value: 0.9544250974938366
+popUpWidnow:
+  drift_status: false
+  p_value: 0.7373829398498403
+port:
+  drift_status: false
+  p_value: 0.9999998686673219
+web_traffic:
+  drift_status: false
+  p_value: 0.44658023176641204
