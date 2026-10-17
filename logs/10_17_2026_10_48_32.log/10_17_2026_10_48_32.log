@@ -1,0 +1,25 @@
+[2026-10-17 10:48:34,148] 18 root - INFO - Initiate the data ingestion
+[2026-10-17 10:48:39,534] 58 root - INFO - Perfomed train test split on the dataframe
+[2026-10-17 10:48:39,535] 59 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[2026-10-17 10:48:39,702] 20 root - INFO - Data Initiation Completed
+[2026-10-17 10:48:39,707] 23 root - INFO - Initiate the data validation
+[2026-10-17 10:48:39,794] 34 root - INFO - Required number of columns:2
+[2026-10-17 10:48:39,794] 35 root - INFO - Data frame has columns:31
+[2026-10-17 10:48:39,794] 34 root - INFO - Required number of columns:2
+[2026-10-17 10:48:39,795] 35 root - INFO - Data frame has columns:31
+[2026-10-17 10:48:40,099] 25 root - INFO - data validation completed
+[2026-10-17 10:48:40,099] 28 root - INFO - data transformation completed
+[2026-10-17 10:48:40,099] 55 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[2026-10-17 10:48:40,099] 60 root - INFO - Starting data transformation
+[2026-10-17 10:48:40,178] 38 root - INFO - Entered get_data_tranformer_object of transofrmation class
+[2026-10-17 10:48:40,178] 44 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2026-10-17 10:48:40,193] 51 root - INFO - Entered the save_object method of MainUtils class
+[2026-10-17 10:48:40,195] 55 root - INFO - Exited the save_object method of MainUtils class
+[2026-10-17 10:48:40,198] 33 root - INFO - Model Training started
+[2026-10-17 10:50:37,800] 93 root - INFO - Model Report: {'Random Forest': 0.9029682559600225, 'Decision Tree': 0.8755064416090854, 'Gradient Boosting': 0.8373650327883395, 'Logistic Regression': 0.7047854957274268, 'AdaBoost': 0.7191266654440273}
+[2026-10-17 10:50:37,800] 94 root - INFO - Best Model: Random Forest
+[2026-10-17 10:50:37,800] 95 root - INFO - Best Model Score: 0.9029682559600225
+[2026-10-17 10:50:38,389] 51 root - INFO - Entered the save_object method of MainUtils class
+[2026-10-17 10:50:38,402] 55 root - INFO - Exited the save_object method of MainUtils class
+[2026-10-17 10:50:38,402] 141 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\10_17_2026_10_48_33\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtfact(f1_score=0.9939312204989885, precision_score=0.9921917070543887, recall_score=0.9956768440961902), test_metric_artifact=ClassificationMetricArtfact(f1_score=0.9797630633956439, precision_score=0.9713848406202169, recall_score=0.9882870683818551))
+[2026-10-17 10:50:38,404] 38 root - INFO - Model Training artifact created
