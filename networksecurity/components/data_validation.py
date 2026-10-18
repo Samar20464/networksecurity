@@ -12,7 +12,7 @@ from networksecurity.utils.utils  import read_yaml_file,write_yaml_file
 
 
 class DataValidation:
-    def __init__(self,data_ingestion_artifact:DataValidationArtifact,
+    def __init__(self,data_ingestion_artifact:DataIngestionArtifacts,
                  data_validation_config:DataValidationConfig):
         try:
             self.data_ingestion_artifact = data_ingestion_artifact
@@ -61,12 +61,15 @@ class DataValidation:
             dir_path = os.path.dirname(drift_report_file_path)
             os.makedirs(dir_path,exist_ok=True)
             write_yaml_file(file_path = drift_report_file_path,content=report)
+            return status
         except Exception as e:
             raise NetworkSecurityException(e,sys)
 
 
     def initiate_data_validation(self) -> DataValidationArtifact:
         try:
+            print("DEBUG: data_ingestion_artifact =", self.data_ingestion_artifact)
+            print("DEBUG: artifact type =", type(self.data_ingestion_artifact))
             train_file_path = self.data_ingestion_artifact.trained_file_path
             test_file_path = self.data_ingestion_artifact.test_file_path
 
@@ -95,13 +98,13 @@ class DataValidation:
             )
 
             data_validation_artifacts = DataValidationArtifact(
-                validation_status=status,
-                valid_train_file_path=self.data_ingestion_artifact.trained_file_path,
-                valid_test_file_path=self.data_ingestion_artifact.test_file_path,
-                invalid_train_file_path=None,
-                invalid_test_file_path=None,
-                drift_report_file_path=self.data_validation_config.drift_report_file_path
-            )
+            validation_status=status,
+            valid_train_file_path=self.data_validation_config.valid_train_file_path,
+            valid_test_file_path=self.data_validation_config.valid_test_file_path,
+            invalid_train_file_path=None,
+            invalid_test_file_path=None,
+            drift_report_file_path=self.data_validation_config.drift_report_file_path
+                )
 
             return data_validation_artifacts
         except Exception as e:
