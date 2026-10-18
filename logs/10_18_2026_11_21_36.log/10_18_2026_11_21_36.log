@@ -1,0 +1,6 @@
+[2026-10-18 11:21:39,538] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-10-18 11:21:39,593] 107 dagshub - INFO - Accessing as Samar20464
+[2026-10-18 11:21:40,452] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/Samar20464/networksecurity "HTTP/1.1 200 OK"
+[2026-10-18 11:21:41,250] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2026-10-18 11:21:41,252] 107 dagshub - INFO - Initialized MLflow to track repo "Samar20464/networksecurity"
+[2026-10-18 11:21:41,252] 107 dagshub - INFO - Repository Samar20464/networksecurity initialized!
